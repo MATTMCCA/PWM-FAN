@@ -11,6 +11,3 @@ Designed to control Dell Server Grade cooling fan's (*because I have one already
 
 ___
 
-#### Notes
-
-R7 may not need to be populated... or should have been tied to VCC.... ?
