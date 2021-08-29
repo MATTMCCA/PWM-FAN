@@ -36,7 +36,7 @@ So I guess the fan *I* have is a dell model *6D237*, which has been surpassed by
 |-----|-------|-------|--------|
 | RED | BLACK | GREEN | YELLOW |
 
-I have no idea how old the **6D237** is, but google can't find it..... Still works though, so I'm a happy camper.
+I have no idea how old the **6D237** is, google can't find it..... Still works though, so I'm a happy camper.
 
 
 
