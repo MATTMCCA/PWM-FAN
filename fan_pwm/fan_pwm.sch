@@ -8783,7 +8783,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k"/>
-<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R4" library="P0915N-QC20BR5K" library_urn="urn:adsk.eagle:library:30572053" deviceset="P0915N-QC20BR5K" device="" package3d_urn="urn:adsk.eagle:package:30572056/3" value="P0915N-QC20BR[5K]"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="27.4k"/>
@@ -8814,6 +8813,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
+<part name="P+13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8871,18 +8871,15 @@ i: 150ua</text>
 <attribute name="NAME" x="252.73" y="114.935" size="1.778" layer="95"/>
 <attribute name="VALUE" x="252.73" y="99.06" size="1.778" layer="96"/>
 </instance>
-<instance part="GND5" gate="1" x="251.46" y="88.9" smashed="yes">
-<attribute name="VALUE" x="248.92" y="86.36" size="1.778" layer="96"/>
+<instance part="GND5" gate="1" x="248.92" y="96.52" smashed="yes">
+<attribute name="VALUE" x="246.38" y="93.98" size="1.778" layer="96"/>
 </instance>
-<instance part="P+2" gate="1" x="251.46" y="124.46" smashed="yes">
-<attribute name="VALUE" x="248.92" y="119.38" size="1.778" layer="96" rot="R90"/>
+<instance part="P+2" gate="1" x="251.46" y="129.54" smashed="yes">
+<attribute name="VALUE" x="248.92" y="124.46" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R7" gate="G$1" x="243.84" y="99.06" smashed="yes" rot="R90">
-<attribute name="NAME" x="242.3414" y="95.25" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="247.142" y="95.25" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND6" gate="1" x="243.84" y="88.9" smashed="yes">
-<attribute name="VALUE" x="241.3" y="86.36" size="1.778" layer="96"/>
+<instance part="R7" gate="G$1" x="241.3" y="116.84" smashed="yes" rot="R270">
+<attribute name="NAME" x="242.7986" y="120.65" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="237.998" y="120.65" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R4" gate="G$1" x="152.4" y="175.26" smashed="yes">
 <attribute name="NAME" x="149.86" y="189.23" size="1.778" layer="95" rot="R180"/>
@@ -8987,6 +8984,9 @@ i: 150ua</text>
 <attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
+<instance part="P+13" gate="1" x="241.3" y="129.54" smashed="yes">
+<attribute name="VALUE" x="238.76" y="124.46" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9023,14 +9023,9 @@ i: 150ua</text>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
-<wire x1="256.54" y1="104.14" x2="251.46" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="104.14" x2="251.46" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="104.14" x2="248.92" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="104.14" x2="248.92" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="243.84" y1="93.98" x2="243.84" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="SHIELD"/>
@@ -9165,12 +9160,17 @@ i: 150ua</text>
 <pinref part="P+10" gate="1" pin="+5V"/>
 <wire x1="106.68" y1="27.94" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="P+13" gate="1" pin="+5V"/>
+<wire x1="241.3" y1="121.92" x2="241.3" y2="127" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="PWM" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
-<wire x1="256.54" y1="109.22" x2="241.3" y2="109.22" width="0.1524" layer="91"/>
-<label x="241.3" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="256.54" y1="109.22" x2="236.22" y2="109.22" width="0.1524" layer="91"/>
+<label x="236.22" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="Y"/>
@@ -9181,19 +9181,19 @@ i: 150ua</text>
 <net name="TACHO" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="3"/>
-<wire x1="256.54" y1="106.68" x2="243.84" y2="106.68" width="0.1524" layer="91"/>
-<label x="241.3" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="256.54" y1="106.68" x2="241.3" y2="106.68" width="0.1524" layer="91"/>
+<label x="236.22" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="106.68" x2="241.3" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="104.14" x2="243.84" y2="106.68" width="0.1524" layer="91"/>
-<junction x="243.84" y="106.68"/>
+<wire x1="241.3" y1="106.68" x2="236.22" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="111.76" x2="241.3" y2="106.68" width="0.1524" layer="91"/>
+<junction x="241.3" y="106.68"/>
 </segment>
 </net>
 <net name="+12V" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
 <wire x1="256.54" y1="111.76" x2="251.46" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="111.76" x2="251.46" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="111.76" x2="251.46" y2="127" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
 </segment>
 <segment>
