@@ -23,7 +23,7 @@ Some ```things``` that have caused concern are as follows,
 - I didn't add a power switch or pads for an off-board switch :rage1: . Guess ill just unplug it when I want it off? or wire a switch in series with the fan +12v wire? (**which should be rated for 2A**).
 - Why do all fan controllers on amazon use high side switching instead of the actual pwm control cooked into the fan assembly? [Note the huge heat sink](https://www.amazon.com/LEDMOMO-1203BB-Controller-Adjustable-Reversible/dp/B07BLWXXQC)
 - *R7 doesn't need to be populated, I checked. The fan still works with no tachometer pull-up. I thought maybe it had current sensing or something weird going on.*
-- Why didn't I just buy [that](https://www.amazon.com/Wathai-Controller-Receiver-Playstation-Component/dp/B07VYGQPCZ) :rage1:
+- Why didn't I just buy [!!that!!](https://www.amazon.com/Wathai-Controller-Receiver-Playstation-Component/dp/B07VYGQPCZ) :rage1:
 ---
 ### Fan Info
 
