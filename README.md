@@ -6,7 +6,9 @@
 Designed to control Dell Server Grade cooling fan's (*because I have one already*), or any 4-wire PC case fan.
 
 [4-wire Fan](https://www.digikey.com/short/5pwf955c)
+
 [Another Fan](https://www.newegg.com/p/1YF-00B0-00V81)
+
 [Overkill Fan **2Amps**](https://www.amazon.com/Wathai-5300rpm-Airflow-Brushless-Cooling/dp/B07SGWNV5J)
 
 ## Parts-List
