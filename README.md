@@ -46,5 +46,5 @@ Boards came today, everything turned out great. Fan spins, speed is adjustable.
 - I did notice, the resistors used to control min and max values from the pot arnt quite right. The min setting looks to be about 5% duty, max is still 100% duty, not 95% like projected. I'm not spinning another revision, so ill have to live with it. *The boards could be reworked, I may do that in the future*.
 
 
-
+![alt text](https://github.com/MATTMCCA/PWM-FAN/blob/main/pics/002.png?raw=true)
 
