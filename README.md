@@ -1,4 +1,5 @@
 
+
 # PWM-FAN Controller
 
 25Khz PWM fan controller for fume extractor. Duty Range: 5%-95%, requires an external 12v supply.
@@ -37,6 +38,12 @@ So I guess the fan *I* have is a dell model *6D237*, which has been surpassed by
 | RED | BLACK | GREEN | YELLOW |
 
 I have no idea how old the **6D237** is, google can't find it..... Still works though, so I'm a happy camper.
+
+
+# Update
+Boards came today, everything turned out great. Fan spins, speed is adjustable.
+
+- I did notice, the resistors used to control min and max values from the pot arnt quite right. The min setting looks to be about 5% duty, max is still 100% duty, not 95% like projected. I'm not spinning another revision, so ill have to live with it. *The boards could be reworked, I may do that in the future*.
 
 
 
