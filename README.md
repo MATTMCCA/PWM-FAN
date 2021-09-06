@@ -1,5 +1,6 @@
 
 
+
 # PWM-FAN Controller
 
 25Khz PWM fan controller for fume extractor. Duty Range: 5%-95%, requires an external 12v supply.
@@ -48,3 +49,4 @@ Boards came today, everything turned out great. Fan spins, speed is adjustable.
 
 ![alt text](https://github.com/MATTMCCA/PWM-FAN/blob/main/pics/002.png?raw=true)
 
+- I may also add an activated charcoal filter, affixed with zip ties... because... I'm not designing an enclosure, even though it would be beneficial....
