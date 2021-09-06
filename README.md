@@ -1,6 +1,7 @@
 
 
 
+
 # PWM-FAN Controller
 
 25Khz PWM fan controller for fume extractor. Duty Range: 5%-95%, requires an external 12v supply.
@@ -46,7 +47,28 @@ Boards came today, everything turned out great. Fan spins, speed is adjustable.
 
 - I did notice, the resistors used to control min and max values from the pot arnt quite right. The min setting looks to be about 5% duty, max is still 100% duty, not 95% like projected. I'm not spinning another revision, so ill have to live with it. *The boards could be reworked, I may do that in the future*.
 
+- I may also add an activated charcoal filter, affixed with zip ties... because... *Function Over Form*...?
+
+---
+
+### Board Measurements 
+
+|   | Vcc | 5%  | 95% |
+|---|---|---|---|
+|Target|12.00 V|140 mV|890 mv|
+|Actual| 12.31 V| 137.1 mV | 920 mV |
+
+*After look at the potentiometer tolerance... of 20%!!!... this kinda make since. I should have picked something with a tighter tolerance, oh well, lesson learned. Functionally everything still works.*
+
+Out of circuit one pot measured `5.30k`, in circuit the other pot measured `5.25k`.
+
+Also, turning the knob to the right lowers the duty, turning it to the left raises the duty. I don't like it, it feels backwards (see note in schematic). I think I wired the pot backwards... so that's fun, Murphy's first law at work.
+
+On a whim, I shorted R6. when I did that the fan kept spinning, this tells me that the fan has a min RPM that is impossible to override by driving the PWM pin to ground (as mentioned above). So it looks like there is no way to turn the fan completely off via PWM, I assume this is a safety feature, seeing as how it is a cooling fan?
+
+---
+
 
 ![alt text](https://github.com/MATTMCCA/PWM-FAN/blob/main/pics/002.png?raw=true)
 
-- I may also add an activated charcoal filter, affixed with zip ties... because... I'm not designing an enclosure, even though it would be beneficial....
+
